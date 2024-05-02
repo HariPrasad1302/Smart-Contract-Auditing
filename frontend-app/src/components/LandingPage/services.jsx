@@ -42,7 +42,7 @@ const gridData = [
 const Services = () => {
 
   return (
-    <div className='min-h-screen  -mt-20 p-20'>
+    <div className='min-h-screen   p-20'>
         <div className='text-center space-y-8'>
             <h1 className='text-black font-bold text-4xl'>Our Smart Contract Security Audit Services</h1>
             <p className='font-semibold mx-auto max-w-5xl text-lg text-black'>Being a reputed smart contract audit company, Antier offers end-to-end smart contract security audit services to help businesses of all sizes launch

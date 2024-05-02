@@ -3,12 +3,12 @@ import React from "react";
 const HeroScreen = () => {
   return (
     <>
-      <div className="min-h-screen flex flex-col lg:flex-row bg-black">
-        <div className="lg:w-[65%] flex flex-col mt-10 lg:mt-40 px-10   lg:px-28">
+      <div className="h-[600px] flex flex-col lg:flex-row bg-gradient-to-b from-black via-gray-800 to-black">
+        <div className="lg:w-[75%] flex flex-col mt-10 lg:mt-28 px-10   lg:px-16">
           {/* <h1 className="text-sm lg:text-xl text-gray-300 font-medium mb-2 lg:mb-3 ">
             SMART AUDIT
           </h1> */}
-          <h1 className="text-white text-xl lg:text-5xl font-bold mb-2 lg:mb-3">
+          <h1 className="text-white text-xl lg:text-6xl font-bold mb-2 lg:mb-3">
             Validate Your Smart Contract with our Expertise
           </h1>
           <p className="text-gray-300 text-md lg:text-xl font-medium lg:w-[95%] mb-8">
@@ -25,13 +25,13 @@ const HeroScreen = () => {
             </button>
           </div>
         </div>
-        <div className="lg:w-[50%] mt-0 lg:mt-[-100px] flex justify-center items-center">
-          <img
-            src="bitcoin.gif" // Replace with your image source
-            alt="Placeholder"
-            className="w-2/3 mr-10 lg:w-58 border-3 border-black"
-          />
-        </div>
+        <div className="lg:w-[50%] mt-0 lg:-mt-28 flex justify-center items-center">
+    <img
+        src="bitcoin.gif" // Replace with your image source
+        alt="Placeholder"
+        className="w-2/3 mr-10 lg:w-58 border-3 border-black spin"
+    />
+</div>
       </div>
     </>
   );

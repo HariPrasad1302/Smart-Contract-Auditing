@@ -10,23 +10,27 @@ const Navbar = () => {
 
       <div className="flex items-center py-2 space-x-16">
         <div className="hidden lg:flex items-center gap-8">
-          <Link className="text-md font-poppins font-medium text-white py-2  hover:text-blue-500 ">
+        <Link className="text-lg font-poppins font-medium text-white py-2  hover:text-blue-500 ">
+            Home
+          </Link>
+          <Link className="text-lg font-poppins font-medium text-white py-2  hover:text-blue-500 ">
             Services
           </Link>
-          <Link className="text-md  font-medium text-white py-2 hover:text-blue-500 ">
-            Audits
+          <Link className="text-lg  font-medium text-white py-2 hover:text-blue-500 ">
+           Our Audits
           </Link>
 
-          <Link className="text-md  font-medium text-white py-2  hover:text-blue-500 ">
+          <Link className="text-lg  font-medium text-white py-2  hover:text-blue-500 ">
             Contact Us
           </Link>
-        </div>
-      </div>
-      <div>
-        <button className="text-white  text-md bg-blue-800 px-4  rounded-full py-2">
+          <div>
+        <button className="text-white font-semibold text-lg bg-blue-800 px-4  rounded-full py-2">
           Request Quote
         </button>
       </div>
+        </div>
+      </div>
+      
     </div>
   );
 };

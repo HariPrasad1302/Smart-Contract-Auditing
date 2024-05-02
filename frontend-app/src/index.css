@@ -7,3 +7,12 @@
 .Navbarbg{
     background: linear-gradient(to right bottom, rgb(15, 23, 42), rgb(69, 21, 105), rgb(15, 23, 42)); /* Set background color */
 }
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.spin {
+    animation: spin 0s linear infinite;
+}

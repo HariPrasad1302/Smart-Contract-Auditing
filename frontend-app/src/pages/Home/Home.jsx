@@ -4,6 +4,7 @@ import HeroScreen from '../../components/LandingPage/HeroScreen';
 import Services from '../../components/LandingPage/services';
 import Testimonials from '../../components/LandingPage/Testimonials';
 import SmartAudits from '../../components/LandingPage/SmartAudits';
+import Trusted from '../../components/LandingPage/Trusted';
 
 const Home = () => {
 
@@ -13,9 +14,13 @@ const Home = () => {
 
       <HeroScreen/>
 
-      <Services/>
+      <Trusted />
 
       <SmartAudits/>
+
+      <Services/>
+
+      
 
 
       <Testimonials/>
