@@ -14,7 +14,7 @@ const Testimonials = () => {
         <div className="relative">
           <div>
             <h2 className="text-center text-white text-4xl lg:text-5xl font-bold leading-tight">Testimonials</h2>
-            <div className="my-4 mx-auto w-12 h-2 border-4 border-indigo-500"></div>
+            <div className="my-4 mx-auto w-12 h-2 border-4 border-opacity-65 border-white"></div>
             <div className="text-center text-white font-light">Here are what some of our amazing customers are
               saying ...
             </div>

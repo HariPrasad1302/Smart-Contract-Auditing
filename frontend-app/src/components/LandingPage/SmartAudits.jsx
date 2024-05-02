@@ -61,7 +61,7 @@ const SmartAudits = () => {
       </div>
       <div className='mt-8 sm:mt-12 space-y-6 sm:space-y-8'>
         {categoryData[activeTab].map((project) => (
-          <div key={project.id} className='bg-opacity-10 lg:space-x-12 mx-auto max-w-md sm:max-w-5xl rounded-xl bg-white bg-blur-md border-2 border-white space-y-4 sm:space-y-0 border-opacity-30 text-white px-6 sm:px-8 py-4 flex flex-col items-center sm:flex-row '>
+          <div key={project.id} className='bg-opacity-10 lg:space-x-12 mx-auto max-w-md sm:max-w-5xl rounded-xl bg-white bg-blur-md border-2 border-white space-y-4 sm:space-y-0 border-opacity-30 text-white px-6 sm:px-8 py-4 flex flex-col  sm:flex-row '>
             <img src={project.logo} className="w-20 h-20 sm:w-24 sm:h-24 rounded-full" />
   
             <div className='flex-1 sm:border-r-2 mx-auto max-w-4xl space-y-4 sm:border-white sm:border-opacity-10'>
