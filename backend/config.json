@@ -1,3 +1,3 @@
 {
-    "connectionString":""
+    "connectionString":"mongodb+srv://auditing:auditing123@cluster0.6iy5l7c.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 }
