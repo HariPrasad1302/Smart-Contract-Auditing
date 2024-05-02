@@ -19,7 +19,7 @@ const projectSchema = new Schema({
         type: String
     },
     projectLogo: {
-        type: String // Assuming logo is a URL to an image
+        type: String 
     },
     uploadedBy: {
         type: Schema.Types.ObjectId,
