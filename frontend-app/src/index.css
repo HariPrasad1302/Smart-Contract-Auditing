@@ -2,3 +2,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.Navbarbg{
+    background: linear-gradient(to right bottom, rgb(15, 23, 42), rgb(69, 21, 105), rgb(15, 23, 42)); /* Set background color */
+}
