@@ -25,6 +25,10 @@ const projectSchema = new Schema({
         type: Schema.Types.ObjectId,
         ref: User,
     },
+    selectedAuditor:{
+        type: Schema.Types.ObjectId,
+        ref: Auditor,
+    },
     quotes: [{
         auditor: {
             type: Schema.Types.ObjectId,
