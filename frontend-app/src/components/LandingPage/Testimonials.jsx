@@ -2,13 +2,8 @@ import React from 'react';
 
 const Testimonials = () => {
   return (
-    <div className="bg-gradient-to-b from-black via-gray-800 to-black text-gray-100 sm:px-8 py-12">
-      <div className="text-center w-full">
-        <svg className="text-gray-100 h-8 mx-auto" fill="currentColor" viewBox="0 0 150 29" version="1.1"
-          xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
-          {/* Your SVG code here */}
-        </svg>
-      </div>
+    <div className="bg-gradient-to-b from-black via-gray-800 to-black text-gray-100 sm:px- lg:py-12 8py-12">
+      
       <div className="relative max-w-screen-xl  px-8 md:px-12 lg:px-16 xl:px-4 py-16 mx-auto  bg-white bg-opacity-5 border-2 border-white border-opacity-10 bg-blur-lg text-gray-900 sm:rounded-lg shadow-lg">
         <div className="absolute right-0 bottom-0 hero-pattern w-64 h-56"></div>
         <div className="relative">
