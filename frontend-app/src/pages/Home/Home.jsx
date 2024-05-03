@@ -11,22 +11,11 @@ const Home = () => {
   return (
     <>
       <Navbar/>
-
       <HeroScreen/>
-
       <Trusted />
-
       <SmartAudits/>
-
       <Services/>
-
-      
-
-
       <Testimonials/>
-      
-
-      
     </>
   );
 };

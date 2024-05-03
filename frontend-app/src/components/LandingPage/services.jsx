@@ -42,10 +42,10 @@ const gridData = [
 const Services = () => {
 
   return (
-    <div className='min-h-screen   p-20'>
+    <div className='min-h-screen   p-4 py-8 lg:p-20'>
         <div className='text-center space-y-8'>
-            <h1 className='text-black font-bold text-4xl'>Our Smart Contract Security Audit Services</h1>
-            <p className='font-semibold mx-auto max-w-5xl text-lg text-black'>Being a reputed smart contract audit company, Antier offers end-to-end smart contract security audit services to help businesses of all sizes launch
+            <h1 className='text-black font-bold text-3xl lg:text-4xl'>Our Smart Contract Security Audit Services</h1>
+            <p className='font-semibold mx-auto max-w-5xl text-md  lg:text-lg text-black'>Being a reputed smart contract audit company, Antier offers end-to-end smart contract security audit services to help businesses of all sizes launch
 highly secure and error-free Blockchain applications.</p>
         </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-4 p-4 mt-12">

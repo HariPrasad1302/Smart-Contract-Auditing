@@ -3,8 +3,8 @@ import React from "react";
 const HeroScreen = () => {
   return (
     <>
-      <div className="h-[600px] flex flex-col lg:flex-row bg-gradient-to-b from-black via-gray-800 to-black">
-        <div className="lg:w-[75%] flex flex-col mt-10 lg:mt-28 px-10   lg:px-16">
+      <div className="lg:h-[600px] flex flex-col lg:flex-row bg-gradient-to-b from-black via-gray-800 to-black">
+        <div className="lg:w-[75%] flex flex-col mt-10 lg:mt-28 px-10  mb-12 lg:px-16">
           {/* <h1 className="text-sm lg:text-xl text-gray-300 font-medium mb-2 lg:mb-3 ">
             SMART AUDIT
           </h1> */}
@@ -25,13 +25,13 @@ const HeroScreen = () => {
             </button>
           </div>
         </div>
-        <div className="lg:w-[50%] mt-0 lg:-mt-28 flex justify-center items-center">
-    <img
-        src="bitcoin.gif" // Replace with your image source
-        alt="Placeholder"
-        className="w-2/3 mr-10 lg:w-58 border-3 border-black spin"
-    />
-</div>
+        <div className="lg:w-[50%] hidden mt-0 lg:-mt-28 lg:flex lg:justify-center lg:items-center">
+          <img
+              src="bitcoin.gif" // Replace with your image source
+              alt="Placeholder"
+              className="w-2/3 mr-10 lg:w-58 border-3 border-black spin"
+          />
+        </div>
       </div>
     </>
   );
