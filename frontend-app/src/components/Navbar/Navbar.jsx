@@ -109,7 +109,7 @@ const Navbar = () => {
                 
                 className="text-lg items-center flex gap-1 transition duration-105 font-semibold text-white py-2 hover:text-blue-500 focus:outline-none"
               >
-                Services
+                Audits
                 {auditorDropdown ? (
                   <IoMdArrowDropup className="h-6 w-6" />
                 ) : (
