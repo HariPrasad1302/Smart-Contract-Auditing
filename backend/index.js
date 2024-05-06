@@ -2,16 +2,16 @@ require("dotenv").config();
 
 const config = require("./config.json");
 const mongoose = require("mongoose");
-
 const express = require("express");
 const cors = require("cors");
+
+const userRoutes = require("./apis/user");
 
 const app = express();
 
 const jwt = require("jsonwebtoken");
 const {authenticateToken} = require("./utilities");
 
-app.use(express.json());
 
 app.use(
     cors({
@@ -22,6 +22,11 @@ app.use(
 app.get("/", (req, res) =>{
     res.json({data:"hello"});
 });
+app.use(express.json());
+
+
+//Api Routes
+app.use("/user", userRoutes);
 
 const connectionString = config.connectionString;
 
