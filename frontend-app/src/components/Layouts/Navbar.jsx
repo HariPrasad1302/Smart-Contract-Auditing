@@ -69,7 +69,7 @@ const Navbar = () => {
                 )}
               </Link>
               {serviceDropdown && (
-                <div className="absolute lg:w-[1000px] bg-gray-400 rounded-lg z-10 p-4">
+                <div className="absolute lg:w-[1000px] bg-gray-200 rounded-lg z-10 p-4">
                   <div className="grid grid-cols-3 gap-4 ">
                     
                   {data.map((item, index) => (
@@ -117,7 +117,7 @@ const Navbar = () => {
                 )}
               </Link>
               {auditorDropdown && (
-                <div className="absolute left-0 lg:w-[500px] mt-1 bg-gray-400 rounded-lg p-4 z-10">
+                <div className="absolute left-0 lg:w-[500px] mt-1 bg-gray-200 rounded-lg p-4 z-10">
                   <h3 className="text-lg font-semibold text-black mb-2">
                     Join Our Network
                   </h3>
