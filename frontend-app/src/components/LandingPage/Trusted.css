@@ -1,0 +1,22 @@
+/* Add this CSS to your Trusted.css file */
+.carousel-container {
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  animation: scroll 10s linear infinite;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
