@@ -1,19 +1,17 @@
 import React, { useState } from 'react'
 import {Link} from "react-router-dom";
 import PasswordInput from '../../components/Input/PasswordInput';
-import { validateEmail } from '../../utils/helper';
+import { validateEmail, validatePassword } from '../../utils/helper';
 import { IoLogoGoogle } from 'react-icons/io';
 
 const SignUp = () => {
 
-  const [email, setEmail] = useState("");
+  const [emailID, setEmailID] = useState("");
   const [fullName, setFullName] = useState("");
   const [password, setPassword] = useState("");
   const [emailerror, setEmailError] = useState(null);
   const[nameError, setNameError] = useState(null);
   const [passwordError, setPasswordError] = useState(null);
-
-
   const handleLogin = async(e) =>{
     e.preventDefault();
 
@@ -24,20 +22,22 @@ const SignUp = () => {
     }
     setNameError("");
 
-    if(!validateEmail(email)){
+    if(!validateEmail(emailID)){
       setEmailError("* Please enter a valid email address.");
       return;
     }
     setEmailError("");
 
-    if(!password){
-      setPasswordError("* Please enter a valid password.");
-      return;
+    if (!password) {
+        setPasswordError("* Please enter a password.");
+        return;
+    } else if (!validatePassword(password)) {
+        setPasswordError("* Please enter a valid password (Eg: Abcd@6371)");
+        return;
     }
     setPasswordError("");
     
   }
-
   return (
     <>
 
@@ -59,8 +59,8 @@ const SignUp = () => {
           type="text" 
           placeholder='Email' 
           className='w-full text-sm text-white bg-transparent border-[1.5px] px-5 py-3 rounded mb-4 outline-none'
-          value={email}
-          onChange={(e) => setEmail(e.target.value)} 
+          value={emailID}
+          onChange={(e) => setEmailID(e.target.value)} 
           />
           {emailerror && <p className='text-gray-200 text-xs pb-1 mb-2'>{emailerror}</p>}
 
