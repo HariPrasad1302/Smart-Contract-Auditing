@@ -13,7 +13,6 @@ const projectSchema = new Schema({
     },
     projectCategory: {
         type: String,
-        enum: ['Smart Contract', 'Defi', 'NFT', 'ERC20']
     },
     projectURL: {
         type: String

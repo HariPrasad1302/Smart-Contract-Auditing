@@ -47,17 +47,19 @@ const gridData = [
 
 const Services = () => {
   return (
-    <div className="min-h-screen bg-black p-4 py-8 lg:p-10">
-      <div className="text-center space-y-8">
-        <h1 className="text-white py-2 mt-5 font-medium text-3xl lg:text-4xl">
+    <div className="min-h-screen bg-black p-4 py-8 lg:py-16">
+      <div className="text-center space-y-4">
+        <h1 className="text-white py-2 mt-5 font-medium text-2xl lg:text-4xl">
           Our Smart Contract Security Audit Services
         </h1>
+        <p className='font-semibold mx-auto max-w-5xl text-lg text-white'>Being a reputed smart contract audit company, Antier offers end-to-end smart contract security audit services to help businesses of all sizes launch
+highly secure and error-free Blockchain applications.</p>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 w-5/6 justify-center gap-10 p-4 ml-[30px] lg:ml-[100px] mt-8">
+      <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-4 lg:p-4 lg:px-16 mt-12">
         {gridData.map((item) => (
           <div
             key={item.id}
-            className="bg-opacity-50 bg-glass border border-orange-300 rounded-md p-4 flex flex-col justify-between"
+            className="bg-opacity-50 hover:scale-105 transition bg-glass border border-orange-300 rounded-md p-4 flex flex-col justify-between"
           >
             <div>
               <img
