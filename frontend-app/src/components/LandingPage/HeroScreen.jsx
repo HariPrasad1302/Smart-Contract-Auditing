@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import SearchBar from "../Input/SearchInput";
+import { useTypewriter, Cursor } from 'react-simple-typewriter';
+
 
 const HeroScreen = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -12,36 +14,15 @@ const HeroScreen = () => {
   const onClearSearch = () =>{
     setSearchQuery("");
   }
-  // useEffect(() => {
-  //   const animateLetters = (word, targetId) => {
-  //     const target = document.getElementById(targetId);
-  //     let index = 0;
 
-  //     const showNextLetter = () => {
-  //       if (index < word.length) {
-  //         target.textContent = word.slice(0, index + 1);
-  //         index++;
-  //         setTimeout(showNextLetter, 100); // Adjust speed here (milliseconds)
-  //       }
-  //     };
+  const [text] = useTypewriter({
+    words: ["Smart Contract", "Transaction Audit", "Security Audit"],
+    loop: true,
+    typeSpeed: 50,
+    deleteSpeed: 30,
+    delaySpeed: 2000,
+  });
 
-  //     showNextLetter();
-
-  //     // Clean up the effect
-  //     return () => {
-  //       // Clear the timeout to prevent memory leaks
-  //       clearTimeout(showNextLetter);
-  //     };
-  //   };
-
-  //   animateLetters("Smart Contract", "smart-contract");
-
-  //   // Clean up the effect on component unmount
-  //   return () => {
-  //     const target = document.getElementById("smart-contract");
-  //     target.textContent = ""; // Clear the content when unmounting
-  //   };
-  // }, []);
 
   return (
     <>
@@ -49,7 +30,13 @@ const HeroScreen = () => {
         <div className="mt-[50px] lg:mt-[90px]">
           <h1 className="text-white  text-center text-2xl lg:text-6xl font-bold mb-2 lg:mb-4">
             Validate Your{" "}
-            <span className="text-orange-500" id="smart-contract">Smart Contract</span>
+            <span className="text-orange-500" id="smart-contract">{text}</span>
+            <Cursor
+              cursorBlinking="false"
+              cursorStyle="|"
+              cursorColor="#ff014f"
+            />
+
             <br /> with our Expertise
           </h1>
         </div>
