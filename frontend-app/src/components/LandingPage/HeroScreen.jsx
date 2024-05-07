@@ -1,19 +1,19 @@
 import React, { useState } from "react";
 import SearchBar from "../Input/SearchInput";
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
-
-
+ 
+ 
 const HeroScreen = () => {
   const [searchQuery, setSearchQuery] = useState("");
-
+ 
   const handleSearch = () =>{
-    
+   
   }
-
+ 
   const onClearSearch = () =>{
     setSearchQuery("");
   }
-
+ 
   const [text] = useTypewriter({
     words: ["Smart Contract", "Transaction Audit", "Security Audit"],
     loop: true,
@@ -21,8 +21,8 @@ const HeroScreen = () => {
     deleteSpeed: 30,
     delaySpeed: 2000,
   });
-
-
+ 
+ 
   return (
     <>
       <div className="lg:h-[580px] h-[300px] flex flex-col items-center bg-gradient-to-b from-black via-gray-800 to-black">
@@ -35,7 +35,7 @@ const HeroScreen = () => {
               cursorStyle="|"
               cursorColor="#ff014f"
             />
-
+ 
             <br /> with our Expertise
           </h1>
         </div>
@@ -248,5 +248,5 @@ const HeroScreen = () => {
     </>
   );
 };
-
+ 
 export default HeroScreen;
