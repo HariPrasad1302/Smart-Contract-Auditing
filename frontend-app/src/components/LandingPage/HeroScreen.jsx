@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import SearchBar from "../Input/SearchInput";
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 
 
 const HeroScreen = () => {
   const [searchQuery, setSearchQuery] = useState("");
-
 
   const handleSearch = () =>{
     
