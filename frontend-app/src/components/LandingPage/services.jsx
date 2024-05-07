@@ -55,11 +55,11 @@ const Services = () => {
         <p className='font-semibold mx-auto max-w-5xl text-lg text-white'>Being a reputed smart contract audit company, Antier offers end-to-end smart contract security audit services to help businesses of all sizes launch
 highly secure and error-free Blockchain applications.</p>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-4 lg:p-4 lg:px-16 mt-12">
+      <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-10 gap-y-10 lg:p-4 lg:px-16 mt-12">
         {gridData.map((item) => (
           <div
             key={item.id}
-            className="bg-opacity-50 hover:scale-105 transition bg-glass border border-orange-300 rounded-md p-4 flex flex-col justify-between"
+            className="bg-opacity-50  bg-glass border border-orange-300 rounded-md p-4 flex flex-col justify-between"
           >
             <div>
               <img
