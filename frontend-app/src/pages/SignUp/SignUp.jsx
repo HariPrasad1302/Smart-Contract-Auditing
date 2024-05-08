@@ -3,6 +3,8 @@ import {Link} from "react-router-dom";
 import PasswordInput from '../../components/Input/PasswordInput';
 import { validateEmail, validatePassword } from '../../utils/helper';
 import { IoLogoGoogle } from 'react-icons/io';
+import {IoReturnUpBack, IoChevronBackCircleOutline} from 'react-icons/io5';
+
 
 const SignUp = () => {
 
@@ -41,8 +43,14 @@ const SignUp = () => {
   return (
     <>
 
-    <div className='flex items-center bg-gradient-to-b from-black via-gray-800 to-black justify-center min-h-screen'>
-      <div className='w-96 border rounded bg-white bg-opacity-10 px-7 py-10'>
+<div className='flex items-center bg-gradient-to-b w- from-black via-gray-800 to-black justify-center min-h-screen'>
+    <div className='w-[400px] border rounded bg-white bg-opacity-10'>
+      <Link to="/login" className='flex items-center text-white font-semibold hover:underline text-lg gap-1 mt-3 ml-3'>
+        <IoChevronBackCircleOutline className='text-white w-7 h-7'/>
+        Back
+
+      </Link>
+      <div className='px-9 py-10'>
         <form onSubmit={handleLogin}>
           <h4 className='text-3xl font-semibold text-white mb-7 text-center'>Sign Up</h4>
 
@@ -89,6 +97,10 @@ const SignUp = () => {
             </Link>
           </p>
         </form>
+
+      </div>
+
+        
       </div>
     </div>
     </>
