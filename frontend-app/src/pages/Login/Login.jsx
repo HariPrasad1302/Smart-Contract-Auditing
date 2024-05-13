@@ -24,7 +24,6 @@ const Login = () => {
     }
     setEmailError("");
 
-
     if (!password) {
       setPasswordError("* Please enter a password.");
       return;
@@ -43,7 +42,7 @@ const Login = () => {
       <div className='flex items-center bg-gradient-to-b w- from-black via-gray-800 to-black justify-center min-h-screen'>
 
       <div className='w-96 border rounded bg-white bg-opacity-10'>
-        <Link to="/login" className='flex items-center text-white font-semibold hover:underline text-lg gap-1 mt-3 ml-3'>
+        <Link to="/home" className='flex items-center text-white font-semibold hover:underline text-lg gap-1 mt-3 ml-3'>
           <IoChevronBackCircleOutline className='text-white w-7 h-7'/>
           Back
 
