@@ -2,7 +2,7 @@ import React from "react";
 
 const Testimonials = () => {
   return (
-    <div className="bg-gradient-to-b from-black via-gray-800 to-black text-gray-100 sm:px- lg:py-12 8py-12">
+    <div className="bg-black text-gray-100 sm:px- lg:py-12 8py-12">
       <div className="relative max-w-screen-xl  px-8 md:px-12 lg:px-16 xl:px-4 py-16 mx-auto text-gray-900 sm:rounded-lg shadow-lg">
         <div className="absolute right-0 bottom-0 hero-pattern w-64 h-56"></div>
         <div className="relative">

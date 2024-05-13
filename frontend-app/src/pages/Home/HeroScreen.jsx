@@ -1,19 +1,16 @@
 import React, { useState } from "react";
-import SearchBar from "../Input/SearchInput";
-import { useTypewriter, Cursor } from 'react-simple-typewriter';
- 
- 
+import SearchBar from "../../components/Input/SearchInput";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
+
 const HeroScreen = () => {
   const [searchQuery, setSearchQuery] = useState("");
- 
-  const handleSearch = () =>{
-   
-  }
- 
-  const onClearSearch = () =>{
+
+  const handleSearch = () => {};
+
+  const onClearSearch = () => {
     setSearchQuery("");
-  }
- 
+  };
+
   const [text] = useTypewriter({
     words: ["Smart Contract", "Transaction Audit", "Security Audit"],
     loop: true,
@@ -21,31 +18,32 @@ const HeroScreen = () => {
     deleteSpeed: 30,
     delaySpeed: 2000,
   });
- 
- 
+
   return (
     <>
       <div className="lg:h-[580px] h-[300px] flex flex-col items-center bg-gradient-to-b from-black via-gray-800 to-black">
         <div className="mt-[50px] lg:mt-[90px]">
           <h1 className="text-white  text-center text-2xl lg:text-6xl font-bold mb-2 lg:mb-4">
             Validate Your{" "}
-            <span className="text-orange-500" id="smart-contract">{text}</span>
+            <span className="text-orange-500" id="smart-contract">
+              {text}
+            </span>
             <Cursor
               cursorBlinking="false"
               cursorStyle="|"
               cursorColor="#ff014f"
             />
- 
             <br /> with our Expertise
           </h1>
         </div>
-        <SearchBar value={searchQuery}
-      onChange={({target}) => {
-        setSearchQuery(target.value);
-      }}
-      handleSearch={handleSearch}
-      onClearSearch={onClearSearch}
-      />
+        <SearchBar
+          value={searchQuery}
+          onChange={({ target }) => {
+            setSearchQuery(target.value);
+          }}
+          handleSearch={handleSearch}
+          onClearSearch={onClearSearch}
+        />
         <div className="flex flex-row gap-3 mt-6 ">
           <button className="text-white font-medium w-32 md:w-44 lg:w-44 text-sm lg:text-md bg-gradient-to-r from-yellow-400 to-red-500 px-4 rounded py-2">
             Audit
@@ -248,5 +246,5 @@ const HeroScreen = () => {
     </>
   );
 };
- 
+
 export default HeroScreen;
